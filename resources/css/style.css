@@ -3,7 +3,17 @@
 /*
 Table of content
 ----------------
-- Universal styles
+* Universal styles
+
+* Hero section
+  - Header
+  - - Logo
+  - - Navigation
+
+* Main section
+
+* Footer section
+
 
 
 
@@ -26,31 +36,83 @@ html {
   box-sizing: inherit;
 }
 
-
 .content-container {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 54rem;
 
   border: 2px dotted red;
 }
 
+.flex-container {
+  display: flex;
+}
 
+
+/* Hero section */
 .hero-section {
-
+  padding-top: 1rem;
+  box-sizing: content-box;
+  height: 30rem;
 
   /* Full width background */
   background-image: url("../media/images/glasses-bg.png");
-
 }
 
-.main-section {
+/* - Header */
+header {
+  font-family: Helvetica;
+  font-size: 1rem;
+  color: white;
+  background-color: CadetBlue;
+  align-items: center;
+  padding: 1rem 1rem;
+}
 
+/* - - Logo */
+.logo-header {
+  align-items: center;
+  margin: auto 1rem;
+}
+
+.logo-header img {
+  max-height: 1.5rem;
+}
+
+.logo-header p {
+  display: inline-block;
+  white-space: nowrap;
+  margin: auto 1rem;
+}
+
+/* - - Navigation */
+.nav-header {
+  flex-grow: 1;
+}
+
+.nav-header ul {
+  float: right;
+}
+
+.nav-btn {
+  display: inline;
+  margin: auto 1rem;
+}
+
+.nav-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Main section */
+.main-section {
 
   /* Full width background */
   background-color: white;
 
 }
 
+
+/* Footer section */
 .footer-section {
 
 
