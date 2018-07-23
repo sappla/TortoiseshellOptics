@@ -12,6 +12,8 @@ Table of content
   - Banner
 
 * Main section
+  - Services
+  - Info
 
 * Footer section
 
@@ -29,6 +31,7 @@ html {
   box-sizing: border-box;
   font-size: 18px;
   line-height: 1.4;
+  font-family: Helvetica;
 
   border: 2px dotted blue;
 }
@@ -41,7 +44,7 @@ html {
   margin: 0 auto;
   max-width: 54rem;
 
-  //border: 2px dotted red;
+  border: 2px dotted red;
 }
 
 .flex-container {
@@ -69,7 +72,6 @@ html {
 
 /* - Header */
 header {
-  font-family: Helvetica;
   font-size: 1rem;
   color: white;
   background-color: CadetBlue;
@@ -118,7 +120,7 @@ header {
   width: 100%;
   padding: 0 1rem;
 
-  border: 2px dotted yellow;
+  //border: 2px dotted yellow;
 }
 
 .hero-banner {
@@ -130,7 +132,6 @@ header {
 }
 
 .hero-banner h1 {
-  font-family: Helvetica;
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.2;
@@ -150,6 +151,43 @@ header {
   border: 2px dotted magenta;
 
 }
+
+/* - Services */
+.services {
+  justify-content: center;
+  height: 8rem;
+  width: 100%;
+  margin-bottom: 3rem;
+
+  border: 2px dotted yellow;
+}
+
+.service-tab {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+  margin: 0 3rem;
+
+  border: 2px dotted blue;
+}
+
+.service-tab img {
+  width: 3.5rem;
+  height: auto;
+
+}
+
+.service-tab h4 {
+  text-align: center;
+
+  float: center;
+}
+
+
+/* - Info */
+
+
 
 
 
