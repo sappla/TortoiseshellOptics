@@ -1,5 +1,3 @@
-/* XXX */
-
 /*
 
 Table of content
@@ -20,10 +18,12 @@ Table of content
   - Logo
   - Copyright
 
+* Media queries
+  - 972px
+  - 828px
+  - 684px
+
 */
-
-
-
 
 /* Universal styles */
 html {
@@ -93,16 +93,22 @@ header {
   flex-grow: 1;
 }
 
+.nav-header-mobile {
+  display: none;
+}
+
 .nav-header ul {
   float: right;
 }
 
-.nav-btn {
+.nav-btn,
+.nav-btn-mobile {
   display: inline;
   margin: auto 1rem;
 }
 
-.nav-btn a {
+.nav-btn a,
+.nav-btn-mobile a {
   text-decoration: none;
   color: white;
 }
@@ -212,4 +218,125 @@ footer {
 
 .copyright {
   margin-left: 1rem;
+}
+
+
+/* Media queries */
+
+/* - 972px */
+@media only screen and (max-width: 56rem) {
+  .hero-section {
+    padding-top: 0;
+    height: 19rem;
+  }
+
+  .hero-content {
+    height: 15rem;
+  }
+
+  .hero-banner {
+    top: 5rem;
+    right: 3rem;
+  }
+
+  .hero-banner h1 {
+    font-size: 1.33rem;
+    margin: 0.75rem 4rem;
+  }
+
+}
+
+/* - 828px */
+@media only screen and (max-width: 46rem) {
+  .nav-header,
+  .logo-header p,
+  .copyright {
+    display: none;
+  }
+
+  .nav-header-mobile {
+    display: inherit;
+    flex-grow: 1;
+  }
+
+  .nav-header-mobile ul {
+    margin-left: auto;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+}
+
+
+/* - 684px */
+@media only screen and (max-width: 38rem) {
+  .hero-section {
+    height: 18rem;
+    margin-bottom: 3.77rem;
+  }
+
+  .hero-content {
+    height: 14rem;
+  }
+
+  .hero-banner {
+    width: 110%;
+    position: relative;
+    float: none;
+    top: 9rem;
+  }
+
+  .hero-banner h1 {
+    font-size: 1rem;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+  }
+
+  .services {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.77rem;
+  }
+
+  .service-tab {
+    margin-bottom: 2rem;
+  }
+
+  .service-tab img {
+    width: 5.0rem;
+    height: auto;
+  }
+
+  .service-tab h4 {
+    padding-top: 0.77rem;
+    font-size: 1rem;
+  }
+
+  .info {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-tab {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .info-title-container {
+    width: 100%;
+  }
+
+  .info-title-container h3 {
+    text-align: center;
+  }
+
+  .info-text {
+    padding: 0 1rem;
+    text-align: left;
+  }
+
 }
